@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!--CSS Path-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>FEMA Extract, Transform, Load</title>
+</head>
+
+<body>
+
+<div class="navigation">
+	<!-- Navbar content -->
+	<nav class="navbar navbar-expand-lg navbar-dark"  style="background-color:black">
+		<a class="navbar-brand" style="background-color:#3F729B;" href="index.html">FEMA ETL</a>
+		<button class="navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Tables
+				</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="disasterareas.html">Declaration Areas</a>
+				<a class="dropdown-item" href="dakeywords.html">Declaration Areas Data Fields</a>
+				<a class="dropdown-item" href="disasterdec.html">Disaster Declarations</a>
+				<a class="dropdown-item" href="ddkeywords.html">Disaster Declarations Data Fields</a>
+				<a class="dropdown-item" href="disastersummaries.html">Disaster Summaries</a>
+				<a class="dropdown-item" href="dskeywords.html">Disaster Summaries Data Fields</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="query.html">Sample Query</a>
+			</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Source Data</a>
+		</li>
+		</ul>
+	 </div>
+	</nav>
+</div>
+
+	<!-- Body -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+	<!-- Left box  -->
+	<div class="box">
+		<h3 class="title">Data Sources</h3>
+		<hr>
+		<img src="img/radar.jpg" class="vizualization rounded float-left" alt="FEMA">
+			<p>The data we gathered came from the FEMA website, specifically from their OpenFEMA API. For this project, we choose to use two CSVs and one JSON file.  Links to both the webpages and the files are listed below.</p>
+			<p>Links to FEMA Data:<br>
+			&emsp;&emsp;<a href="https://www.fema.gov/openfema-dataset-fema-web-declaration-areas-v1">&#8226;&nbsp;FEMA Web Declaration Areas</a><br>
+			&emsp;&emsp;<a href="https://www.fema.gov/openfema-dataset-fema-web-disaster-declarations-v1">&#8226;&nbsp;FEMA Web Disaster Declarations</a><br>
+			&emsp;&emsp;<a href="https://www.fema.gov/openfema-dataset-fema-web-disaster-summaries-v1">&#8226;&nbsp;FEMA Web Disaster Summaries</a><br>
+			<br>
+			Links to Data Files:<br>
+			&emsp;&emsp;<a href="https://www.fema.gov/api/open/v1/FemaWebDeclarationAreas.json">&#8226;&nbsp;FEMA Web Declaration Areas JSON File</a><br>
+			&emsp;&emsp;<a href="https://www.fema.gov/api/open/v1/FemaWebDisasterDeclarations.csv">&#8226;&nbsp;FEMA Web Disaster Declarations CSV File</a><br>
+			&emsp;&emsp;<a href="https://www.fema.gov/api/open/v1/FemaWebDisasterSummaries.csv">&#8226;&nbsp;FEMA Web Disaster Summaries CSV File</a></p>
+	</div>
+			</div>
+			
+    </div>
+
+	</div>
+
+  <!-- Footer Section -->
+
+  <footer>
+
+    <div class="footer">&copy;2019&nbsp;Julia Sweet, Julia Smith, John Goodale, Kyle Younghans, Ricardo Bonner</div>
+
+  </footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

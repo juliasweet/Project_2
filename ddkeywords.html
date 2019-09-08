@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!--CSS Path-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>FEMA Extract, Transform, Load</title>
+</head>
+
+<body>
+
+<div class="navigation">
+	<!-- Navbar content -->
+	<nav class="navbar navbar-expand-lg navbar-dark"  style="background-color:black">
+		<a class="navbar-brand" style="background-color:#3F729B;" href="index.html">FEMA ETL</a>
+		<button class="navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Tables
+				</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="disasterareas.html">Declaration Areas</a>
+				<a class="dropdown-item" href="dakeywords.html">Declaration Areas Data Fields</a>
+				<a class="dropdown-item" href="disasterdec.html">Disaster Declarations</a>
+				<a class="dropdown-item" href="ddkeywords.html">Disaster Declarations Data Fields</a>
+				<a class="dropdown-item" href="disastersummaries.html">Disaster Summaries</a>
+				<a class="dropdown-item" href="dskeywords.html">Disaster Summaries Data Fields</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="query.html">Sample Query</a>
+			</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Source Data</a>
+		</li>
+		</ul>
+	 </div>
+	</nav>
+</div>
+
+<div class="container">
+
+    <div class="box">
+
+      <h3 class="title">Disaster Declaration Table Data Fields</h3>
+
+      <hr>
+
+      <p>Below is a list outining the data fields within the Disaster Declaration table and a desciption and type for each item.</p>
+
+      <br>
+
+ <div class="table-responsive" style="overflow-x:auto; overflow-y:auto; max-height:768px; max-width: auto;">
+<table class="table table-hover table-dark">
+<caption>List of Data Fields for the Disaster Declaration Table</caption>
+  <thead>
+    <tr style="text-align: left;">
+      
+      <th>Name</th>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td>disasternumber</td>
+      <td>Disaster Number</td>
+      <td>integer</td>
+      <td>Number assigned to designate an event or incident declared as a disaster</td>
+    </tr>
+    <tr>
+     
+      <td>declarationdate</td>
+      <td>Declaration Date</td>
+      <td>date</td>
+      <td>The date the disaster was declaredThe date the disaster was declared</td>
+    </tr>
+    <tr>
+      
+      <td>disastername</td>
+      <td>Disaster Name</td>
+      <td>varchar</td>
+      <td>The proper name or description of the disaster, i.e. HURRICANE MARIA, FLOODING, SEVERE STORMS</td>
+    </tr>
+    <tr>
+     
+      <td>incidentbegindate</td>
+      <td>Incident Begin Date</td>
+      <td>date</td>
+      <td>The date the incident itself began</td>
+    </tr>
+    <tr>
+      
+      <td>incidentenddate</td>
+      <td>Incident End Date</td>
+      <td>date</td>
+      <td>The date the incident itseld ended</td>
+    </tr>
+    <tr>
+     
+      <td>declarationtype</td>
+      <td>Declaration Type</td>
+      <td>varchar</td>
+      <td>Defines whether a disaster is a Major Disaster Declaration, Emergency Declaration, Fire Management Assistance Declaration, or Fire Suppression Authorization.</td>
+    </tr>
+    <tr>
+      
+      <td>statecode</td>
+      <td>State Code</td>
+      <td>varchar</td>
+      <td>Two letter code for U.S. states, districts, and territories</td>
+    </tr>
+    <tr>
+      
+      <td>statename</td>
+      <td>State Name</td>
+      <td>varchar</td>
+      <td>The name of phrase describing the U.S. state, district, or territory</td>
+    </tr>
+    <tr>
+     
+      <td>incidenttype</td>
+      <td>Incident Type</td>
+      <td>varchar</td>
+      <td>The specific category for the disaster, i.e. Coastal Storm, Drought, Flood, Snow, Hurricane, Wildfire</td>
+    </tr>
+  </tbody>
+</table>
+				</div>
+			</div>
+			</div>
+	</div>
+
+			</div>
+
+    </div>
+
+	</div>
+
+  <!-- Footer Section -->
+
+  <footer>
+
+    <div class="footer">&copy;2019&nbsp;Julia Sweet, Julia Smith, John Goodale, Kyle Younghans, Ricardo Bonner</div>
+
+  </footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
